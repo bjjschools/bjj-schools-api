@@ -20,7 +20,7 @@ mongoose
         useUnifiedTopology: true
     })
     .then(() =>{
-        app.listen(config.defaultServerPort, ()=>console.log("Listening on port 3000..."));
+        app.listen(config.defaultServerPort, ()=>console.log("Listening on port "+config.defaultServerPort+"..."));
     })
     .catch(err=>{
         console.log('Error connecting to database: '+ err);
